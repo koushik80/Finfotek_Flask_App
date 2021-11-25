@@ -1,0 +1,1111 @@
+{%extends "layouts.html"%}
+<!DOCTYPE html>
+<html lang="en">
+{%block head%}
+<head>
+    <title>ƑINƑO†EK | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Responsive, Flat, Android Compatible,
+                Smartphone Compatible" />
+{%block script%}
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+{%endblock%}
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{url_for('static', filename='css/style.css')}}" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.css')}}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.css')}}" type="text/css" media="screen" property="" />
+    <link href="{{url_for('static', filename='css/prettyPhoto.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{url_for('static', filename='css/fontawesome-all.css')}}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+{%endblock%}
+<body>
+{%block content%}
+    <!-- mian-content -->
+    <section class="mian-content">
+        <!-- /header-top-->
+        <div class="bs-slider-overlay">
+            <div class="header-top">
+                <header class="mainheader">
+                    <nav class="navbar second navbar-expand-lg navbar-light bg-light pagescrollfix">
+                        <a class="navbar-brand pagescrolldisplay" href="{{url_for('index')}}"><i class="fas fa-server"></i> ƑINƑO†EK</a>
+                        <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup1">
+                            <div class="navbar-nav secondfix mx-auto">
+                                <a class="nav-item nav-link sec scroll" href="#about">Introduction</a>
+                                <a class="nav-item nav-link sec scroll" href="#feature">Features</a>
+                                <a class="nav-item nav-link sec scroll" href="#services">What we do</a>
+                                <a class="nav-item nav-link sec scroll" href="#team">Experts</a>
+                                <a class="nav-item nav-link sec scroll" href="#plan">Plans</a>
+                                <a class="nav-item nav-link sec scroll" href="#clients">Testimonials</a>
+                            </div>
+                            <a class="nav-link request text-uppercase scrolldemo ml-auto pagescrolldisplay" style="color:red" href="{{url_for('register')}}">Signup</a>
+                            <a class="nav-link request text-uppercase scrolldemo ml-auto pagescrolldisplay" style="color:red" href="{{url_for('login')}}">Login</a>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light RWDpagescrollfix">
+                        <h1><a class="navbar-brand" href="{{url_for('index')}}"><i class="fas fa-server"></i> ƑINƑO†EK</a></h1>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Here We
+                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{url_for('services')}}">Services</a>
+                                        <a class="dropdown-item" href="{{url_for('blog')}}" title="">Blog</a>
+                                        <a class="dropdown-item" href="{{url_for('single')}}" title="">Featured Article</a>
+                                    </div>
+                                </li>
+                                <li><a class="nav-link text-uppercase" href="{{url_for('about')}}">About us</a></li>
+                                <li><a class="nav-link text-uppercase" href="{{url_for('price')}}">Pricing Plans</a></li>
+                                <li> <a class="nav-link text-uppercase" href="{{url_for('contact')}}">Contact us</a></li>
+                                <li class="nav-item active"><a class="nav-link text-uppercase" href="{{url_for('account')}}">Account</a></li>
+
+                            </ul>
+                            <div class="top-info text-left">
+                                <ul>
+                                    <li><i class="fas fa-phone-volume" style="color:red"></i> +358 00 888 000</li>
+                                    <li class="number-phone"><a class="nav-link active request text-uppercase font-weight-bold" style="color:red" href="{{url_for('register')}}">Signup</a></li>
+                                    <li class="number-phone"><a class="nav-link request text-uppercase font-weight-bold" style="color:red" href="{{url_for('login')}}">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+                <!-- /header-top-->
+
+
+                <!-- /banner-info-->
+
+                <div class="banner-content text-center text-white">
+                    <h3>Let us change the way you think about technology</h3>
+                    <h4 class="text-uppercase">Business Inteligence / Strategy / Branding / Design / CRM / Financial Assistance / Cloud Services</h4>
+                    <div class="banner-high-lights row">
+                        <div class="bg-gd-info col-md-4">
+                            <div class="bg-gd">
+                                <i class="fas fa-chart-line mb-2"></i>
+                                <h5 class="my-2">Managed IT Services</h5>
+                                Comprehensive, non-stop IT support to ensure optimum performance.
+                            </div>
+                        </div>
+                        <div class="bg-gd-info col-md-4">
+                            <div class="bg-gd active">
+                                <i class="fas fa-tasks mb-2"></i>
+                                <h5 class="my-2">
+                                    Strategy & Management</h5>
+                                A team of senior IT specialists deliver your project on time and on budget.</div>
+                        </div>
+
+                        <div class="bg-gd-info col-md-4">
+                            <div class="bg-gd">
+                                <i class="fas fa-cogs mb-2"></i>
+                                <h5 class="my-2">
+                                    Procurement</h5>
+                                Services to ensure company’s access to the best technology products.</div>
+                        </div>
+                    </div>
+                    <div class="rotate">
+                        <a href="#about" class="scroll text-uppercase">
+                            <i class="fas fa-angle-double-down"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- //banner-info-->
+            </div>
+        </div>
+        <!-- //header-top-->
+    </section>
+    <!-- //mian-content-->
+    <!-- banner-bottom -->
+    <section class="banner-bottom py-lg-5 py-md-5 py-3" id="about">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <div class="row">
+                    <div class="col-lg-6 about-img">
+                        <img class="img-fluid" src="../static/images/ab.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 about-right mt-lg-4">
+                        <h4 class="sub-tittle">Who We Are</h4>
+                        <h3 class="tittle text-uppercase">Exceeding your expectations – the first time, every time</h3>
+                        <p class="my-4"> Not all software consulting firms are created equal. Most are run by salesmen, who pressure you to buy the products they sell. Rushing to the next sale, they leave you stranded without implementation, customization or training.</p>
+                        <p class="my-4">ƑINƑO†EK is different. We’re owned and operated by business consultants with a unique combination of accounting and technical expertise. We know how to implement a successful ERP system, not just talk about one, because we’re seasoned
+                            Sage 100 consultants.</p>
+
+                        <p class="my-4">Working in concert with our customers to design and implement real solutions to business challenges is the life’s blood of ƑINƑO†EK. If the SAGE 100 products are not the right fit, you will hear it from us first. We’re here to
+                            provide you with business solutions, determining how your business can be improved, with or without new software.</p>
+
+
+                        <ul class="author d-flex">
+                            <li><img class="img-fluid" src="../static/images/author.jpg" alt=""></li>
+                            <li><span>Mrs. XXX</span>ƑINƑO†EK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-lg-5 stats-con">
+                    <div class="col-sm-3 col-6 stats_info counter_grid">
+
+                        <i class="far fa-lightbulb"></i>
+                        <p class="counter">545</p>
+                        <h4>Projects Done</h4>
+
+                    </div>
+                    <div class="col-sm-3 col-6 stats_info counter_grid1">
+
+                        <i class="far fa-heart"></i>
+                        <p class="counter">533</p>
+                        <h4>ƑINƑO†EK Clients</h4>
+
+                    </div>
+                    <div class="col-sm-3 col-6 stats_info counter_grid">
+
+                        <i class="fas fa-magic"></i>
+                        <p class="counter">825</p>
+                        <h4>Awards</h4>
+
+                    </div>
+                    <div class="col-sm-3 col-6 stats_info counter_grid2">
+
+                        <i class="far fa-smile"></i>
+                        <p class="counter">1020</p>
+                        <h4>Happy Clients</h4>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //banner-bottom -->
+    <!-- ab -->
+    <section class="banner-bottom bg-light py-lg-5 py-md-5 py-3" id="feature">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Features</h4>
+                <h3 class="tittle text-center"> Our Great Features</h3>
+                <div class="row mt-lg-5 mt-md-4 mt-4">
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-sort-alpha-up mb-4"></i>
+                                <h5 class="card-title">Integrity</h5>
+                                <p class="card-text">We make mistakes just like everyone else. We differ by our quality of being honest and having strong moral principles, so we act according to our values.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-user mb-4" aria-hidden="true"></i>
+                                <h5 class="card-title">Fiscal responsibility</h5>
+                                <p class="card-text">Decisions must be made beyond the needs of the present so that we can face the challenges of tomorrow, with the responsibility to our employees, clients, and partners.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-cloud mb-4" aria-hidden="true"></i>
+                                <h5 class="card-title">SAGE 100 CLOUD</h5>
+                                <p class="card-text">Sage 100 Cloud accounting software is an industry-leading accounting and business management solution for small to medium-sized companies with 10 – 200 employees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="far fa-heart mb-4"></i>
+                                <h5 class="card-title">User Friendly</h5>
+                                <p class="card-text">With a modern and elegant technical design, ƑINƑO†EK's framework is unique. It allows us and our community developers to provide top-notch usability that scales across all applications.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-magic mb-4"></i>
+                                <h5 class="card-title">Modern Design</h5>
+                                <p class="card-text">ƑINƑO†EK designs marketing strategies that deliver business impact through an approach positioned at the intersection of data, creative design and contemporary culture.We build digital solutions and design marketing campaigns
+                                    based on data and analysis, aimed at achieving full impact for the clients.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-sliders-h mb-4"></i>
+                                <h5 class="card-title">Independence</h5>
+                                <p class="card-text">A general rule to avoid partnerships, contracts or other involvements that may compromise our values, service or prevent us from acting according to the best business practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //ab -->
+
+    <!-- /services -->
+    <section class="banner-bottom py-lg-5 py-md-5 py-3" id="services">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">What we do</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">Our Offered Services</h3>
+                <div class="row middle-grids">
+                    <div class="col-lg-4 about-in middle-grid-info text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fab fa-accusoft mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">
+                                    Best IT solutions & Financial Planning</h5>
+                                <p class="card-text">We break down different aspects of a client's financial life including assets, expenses and income and help to create a financial plan to reach different goals.
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in middle-grid-info active text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-compress mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">Best Business Solution</h5>
+                                <p class="card-text">We help businesses improve their performance and implement changes that optimize process in order to achieve success. And we are happy to...
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in middle-grid-info text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-chart-pie mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">Best Expert Consultancy</h5>
+                                <p class="card-text">We create custom solutions in accordance with the company’s business size, organization and objectives. We are proud to offer our...
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //services -->
+    <div class="colorBg " style="background-attachment:fixed;">
+        <div class="container">
+            <h2 class="borderLine "><span class="bg">How we work</span></h2>
+            <a href="#"><img loading="lazy" class="img-fluid" src="../static/images/ArrowGraphic2.jpg" alt="" width="500" height="100" /></a><br />
+        </div>
+    </div>
+
+    <!--gallery  -->
+    <section class="gallery py-md-5 py-3">
+        <div class="gallery-inner pb-md-5 pb-3">
+            <h3 class="tittle text-center mb-md-5 mb-4">Latest Projects</h3>
+            <ul class="portfolio-categ filter pb-5 mb-lg-3 text-center">
+                <li class="port-filter all active">
+                    <a href="#">All</a>
+                </li>
+                <li class="cat-item-1">
+                    <a href="#" title="Category 1">Moving Sage 100 to the Cloud</a>
+                </li>
+                <li class="cat-item-2">
+                    <a href="#" title="Category 2">Automation Projects</a>
+                </li>
+                <li class="cat-item-3">
+                    <a href="#" title="Category 3">Team Efficiency Increase Projects</a>
+                </li>
+
+
+            </ul>
+            <ul class="portfolio-area clearfix">
+                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-3">
+                    <span class="image-block img-hover">
+                        <a class="image-zoom" href="../static/images/g1.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g1.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+                    <span class="image-block">
+                       <a class="image-zoom" href="../static/images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g2.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+                    <span class="image-block">
+                        <a class="image-zoom" href="../static/images/g3.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g3.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+                    <span class="image-block">
+                       <a class="image-zoom" href="../static/images/g4.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g4.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-5" data-type="cat-item-2">
+                    <span class="image-block">
+                       <a class="image-zoom" href="../static/images/g5.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g5.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+                    <span class="image-block">
+                       <a class="image-zoom" href="../static/images/g6.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g6.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+                    <span class="image-block">
+                       <a class="image-zoom" href="../static/images/g7.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g7.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+                    <span class="image-block">
+                        <a class="image-zoom" href="../static/images/g8.jpg" data-gal="prettyPhoto[gallery]">
+                            <img src="../static/images/g8.jpg" class="img-fluid " alt="">
+                        </a>
+                    </span>
+                </li>
+                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+                    <span class="image-block">
+                            <a class="image-zoom" href="../static/images/g9.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="../static/images/g9.jpg" class="img-fluid " alt="">
+                            </a>
+                        </span>
+                </li>
+            </ul>
+            <!--end portfolio-area -->
+        </div>
+        <!-- //gallery container -->
+    </section>
+    <!-- //gallery -->
+    <!--/team-->
+    <section class="tean-sec bg-light py-md-5 py-3" id="team">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Meet us</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">Amazing Team</h3>
+                <div class="row">
+                    <div class="col-lg-3 team-grids text-center">
+                        <div class="team-info-content">
+                            <img src="../static/images/team1.jpg" class="img-fluid" alt="img">
+                            <div class="view-caption">
+
+                                <ul class="social-icons justify-conten-center">
+                                    <li class="mr-1"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="team-description mt-3">
+                            <h4>Mr. XXX</h4>
+                            <p class="des font-italic">CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 team-grids text-center">
+                        <div class="team-info-content">
+                            <img src="../static/images/team2.jpg" class="img-fluid" alt="img">
+                            <div class="view-caption">
+
+                                <ul class="social-icons justify-conten-center">
+                                    <li class="mr-1"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="team-description mt-3">
+                            <h4>Mr. XXX</h4>
+                            <p class="des font-italic">Creative Director</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 team-grids text-center">
+                        <div class="team-info-content">
+                            <img src="../static/images/team3.jpg" class="img-fluid" alt="img">
+                            <div class="view-caption">
+                                <ul class="social-icons justify-conten-center">
+                                    <li class="mr-1"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-description mt-3">
+                            <h4>Mrs. XXX</h4>
+                            <p class="des font-italic">Business Manager</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 team-grids text-center">
+                        <div class="team-info-content">
+                            <img src="../static/images/team4.jpg" class="img-fluid" alt="img">
+                            <div class="view-caption">
+                                <ul class="social-icons justify-conten-center">
+                                    <li class="mr-1"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    <li class="mx-1"><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-description mt-3">
+                            <h4>Mr. XXX</h4>
+                            <p class="des">Project Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg-5 mt-3">
+                    <div class="col-lg-6 progress-info-content">
+                        <div class="progress-one">
+                            <h4 class="progress-tittle">Web Design</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-one my-lg-4">
+                            <h4 class="progress-tittle">PHP Development</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-one">
+                            <h4 class="progress-tittle">Cloud CRM Solutions</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 progress-info-content">
+
+                        <div class="progress-one">
+                            <h4 class="progress-tittle">Marketing</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-one my-lg-4">
+                            <h4 class="progress-tittle">Web Services</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-one">
+                            <h4 class="progress-tittle">
+                                ERP & Design</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //team -->
+    <!--/pricing -->
+    <section class="pricing py-md-5 py-3" id="plan">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Choose your Plan</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">Pricing Plans</h3>
+                <div class="price-right">
+                    <div class="tabs">
+                        <ul class="nav nav-pills my-md-5 my-3 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Weekly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Monthly</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="menu-grids mt-4">
+                                    <div class="row t-in">
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Basic</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>30
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Satandard</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>90
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>Secure Remote Support</li>
+                                                        <li>Third Party Patch Mgmt</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Advance</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>150
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>Secure Remote Support</li>
+                                                        <li>Third Party Patch Mgmt</li>
+                                                        <li>Business Continuity Planning</li>
+                                                        <li>Data Loss Prevention (DLP) And E-Discovery</li>
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="menu-grids mt-4">
+                                    <div class="row t-in">
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Basic</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>150
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Standard</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>220
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>Secure Remote Support</li>
+                                                        <li>Third Party Patch Mgmt</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 price-main-info text-center">
+                                            <div class="price-inner card box-shadow">
+
+                                                <div class="card-body">
+                                                    <h4 class="text-uppercase mb-3">Advance</h4>
+                                                    <h5 class="card-title pricing-card-title">
+                                                        <span class="align-top">€</span>420
+
+                                                    </h5>
+                                                    <ul class="list-unstyled mt-3 mb-4">
+                                                        <li>Network Monitoring And Management</li>
+                                                        <li>Operating System Patch Management</li>
+                                                        <li>Hardware And Software Procurement</li>
+                                                        <li>Cloud Back Up And Disaster Recovery</li>
+                                                        <li>Proactive Client Relationship Manager (CRM)</li>
+                                                        <li>Secure Remote Support</li>
+                                                        <li>Third Party Patch Mgmt</li>
+                                                        <li>Business Continuity Planning</li>
+                                                        <li>Data Loss Prevention (DLP) And E-Discovery</li>
+                                                    </ul>
+                                                    <div class="log-in mt-md-3 mt-2">
+                                                        <a class="hover-2 btn text-uppercase" href="{{url_for('contact')}}">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //pricing -->
+    <!-- /bottom-last -->
+    <section class="bottom-last">
+        <div class="bottom-bg py-5 bs-slider-overlay text-left">
+            <h3 class="tittle">Specialized IT Help Desk Services</h3>
+            <p class="text-white mb-4">We offer reliable IT help desk services & support for organizations requiring a full- or part-time support desk, an application or customer service desk, or a comprehensive technical service resource center. </p>
+            <div class="log-in pb-md-5 pb-3">
+                <a class="hover-2 btn text-uppercase" href="{{url_for('about')}}">Read More</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- //bottom-last -->
+    <!--/Blog-Posts-->
+    <section class="banner-bottom bg-light py-md-5 py-4">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-4">
+                <h4 class="sub-tittle text-uppercase text-center">Recent Talks</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">
+                    Blog Posts</h3>
+                <!--/services-grids-->
+                <div class="row blog-sec">
+                    <div class="col-lg-4 about-in blog-grid-info text-left">
+                        <div class="card img">
+                            <div class="card-body img">
+                                <img src="../static/images/blg1.jpg" alt="" class="img-fluid">
+                                <div class="blog-des">
+                                    <span class="entry-date">May 12, 2021</span>
+                                    <h5 class="card-title text-uppercase mt-2"><a href="{{url_for('single')}}">How Effective Communication Can Reward Remote Workforce</a></h5>
+                                    <p class="card-text">Remote work is widely adopted though it is not new. The current scenario has made it the only mode of work globally. Telework wil...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in blog-grid-info text-left">
+                        <div class="card img">
+                            <div class="card-body img">
+                                <img src="../static/images/blg2.jpg" alt="" class="img-fluid">
+                                <div class="blog-des">
+                                    <span class="entry-date">June 23, 2021</span>
+                                    <h5 class="card-title text-uppercase mt-2"><a href="{{url_for('single')}}">Azure vs Google Cloud: What’s Best for Your Business? </a></h5>
+                                    <p class="card-text">There is a never-ending debate on what lies ahead for Cloud services and how they will enable.How will you choose the right one to...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in blog-grid-info text-left">
+                        <div class="card img">
+                            <div class="card-body img">
+                                <img src="../static/images/blg3.jpg" alt="" class="img-fluid">
+                                <div class="blog-des">
+                                    <span class="entry-date">August 25, 2021</span>
+                                    <h5 class="card-title text-uppercase mt-2"><a href="{{url_for('single')}}">Keep Safe Digital Environment with Surging Cyber Attacks in Pandemic </a></h5>
+                                    <p class="card-text">The effects are quite visible worldwide of COVID-19 outbreak and nations across the globe are taking preventive measures to curb...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//Blog-Posts-->
+    <!--/testimonials-->
+    <section class="clients py-md-5 py-3" id="clients">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Lovely Clients</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">Testimonials</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="feedback-info text-left">
+                            <div class="feedback-top">
+
+                                <p>We can always rely on your team to answer our calls at any time of the day and provide us with prompt service...</p>
+                            </div>
+                            <div class="feedback-grids">
+                                <div class="feedback-img">
+                                    <img src="../static/images/t1.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="feedback-img-info">
+                                    <h5>Mrs. XXX</h5>
+                                    <p>Helsinki
+                                        <span>(Nordica oy)</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback-info text-left">
+
+                            <div class="feedback-top">
+
+                                <p>It was great and handled very fast. They worked around my conference call and fixed the issue right away...</p>
+                            </div>
+                            <div class="feedback-grids">
+                                <div class="feedback-img">
+                                    <img src="../static/images/t3.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="feedback-img-info">
+                                    <h5>Mr. XXX</h5>
+                                    <p>Turku
+                                        <span>(Lambada Oy)</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback-info text-left">
+                            <div class="feedback-top">
+                                <p>We have peace of mind knowing there is a large team of experts behind us, guaranteeing high levels of service...</p>
+                            </div>
+                            <div class="feedback-grids">
+                                <div class="feedback-img">
+                                    <img src="../static/images/t2.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="feedback-img-info">
+                                    <h5>Mr. XXX</h5>
+                                    <p>Vantaa <span>(SinPro Oy)</span></p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback-info text-left">
+
+                            <div class="feedback-top">
+
+                                <p>Thank you ƑINƑO†EK for your continued tireless efforts in making sure we're productive. And you always...</p>
+                            </div>
+                            <div class="feedback-grids">
+                                <div class="feedback-img">
+                                    <img src="../static/images/t4.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="feedback-img-info">
+                                    <h5>Mr. XXX</h5>
+                                    <p>Rovaniemi
+                                        <span>(Elcom Oy)</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback-info text-left">
+                            <div class="feedback-top">
+                                <p>As a mid-size company, we rely on ƑINƑO†EK to keep our system operating and our people focused on their jobs and not on maintaining their software...</p>
+                            </div>
+                            <div class="feedback-grids">
+                                <div class="feedback-img">
+                                    <img src="../static/images/t5.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="feedback-img-info">
+                                    <h5>Mr. XXX</h5>
+                                    <p>Kuopio <span>(Scala Oy)</span></p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//testimonials-->
+
+    <!--/newsletter-->
+    <footer class="newsletter_right bg-dark pymd-5 py-4">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <div class="row mb-md-4 mb-3">
+                    <div class="col-md-6 n-right tex-left">
+                        <h3 class="tittle foot mb-md-5 mb-4 text-white">Subscribe our Newsletter</h3>
+                        <form action="#" method="post">
+                            <div class="form-group d-flex">
+                                <input class="form-control" type="email" name="Email" placeholder=" Email Address" required="">
+                                <input class="form-control submit text-uppercase" type="submit" value="Subscribe">
+                            </div>
+
+                        </form>
+
+                        <div class="copyright mt-md-5 mt-3">
+                            <h2><a class="navbar-brand" href="{{url_for('index')}}">
+                                        ƑINƑO†EK</a></h2>
+                            <p class="copy-right mt-3">© 2021 ƑINƑO†EK. All Rights Reserved </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 social-info text-right">
+                        <h3 class="tittle foot mb-md-3 mb-4 text-white">Join us in the following social networks</h3>
+                        <p>Stay informed with the latest tech trends, useful services, and updates</p>
+                        <div class="social-icon footer mt-3">
+                            <ul class="links-nav d-flex justify-content-end">
+                                <li>
+                                    <a class="active" href="{{url_for('index')}}" style="color:red;">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('about')}}">About us</a>
+                                </li>
+
+                                <li>
+                                    <a href="{{url_for('price')}}">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('blog')}}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('contact')}}">Contact us</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icons justify-content-end mt-md-5 mt-3">
+                                <li class="mr-1"><a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+                                <li class="mx-1"><a href="https://twitter.com/"><span class="fab fa-twitter"></span></a></li>
+                                <li class="mx-1"><a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a></li>
+                                <li class="mx-1"><a href="https://www.linkedin.com/"><span class="fab fa-linkedin-in"></span></a></li>
+                                <li class="mr-1"><a href="https://www.thesoftwarereport.com/category/latest-news/" target="_blank"><span class="fa fa-rss" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//newsletter-->
+
+    <!-- js -->
+    <script src="../static/js/jquery-2.2.3.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 150) {
+                $('nav.pagescrollfix,nav.RWDpagescrollfix').addClass('shrink');
+            } else {
+                $('nav.pagescrollfix,nav.RWDpagescrollfix').removeClass('shrink');
+            }
+        });
+    </script>
+    <!-- stats -->
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //stats -->
+
+
+    <!-- carousel -->
+    <script src="../static/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    900: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //carousel -->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+
+    <!-- password-script -->
+    <script>
+        window.onload = function() {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- //password-script -->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="../static/js/move-top.js"></script>
+    <script src="../static/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear'
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+    <!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+    <!--// end-smoth-scrolling -->
+    <script src="../static/js/jquery-1.7.2.js"></script>
+    <script src="../static/js/jquery.quicksand.js"></script>
+    <script src="../static/js/pretty-script.js"></script>
+    <script src="../static/js/jquery.prettyPhoto.js"></script>
+    <!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
+    <!-- /js -->
+    <script src="../static/js/bootstrap.js"></script>
+    <!-- //js -->
+    {%endblock content%}
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: easy-pil
+Version: 0.1.0
+Summary: A library to make common tasks of Pillow easy.
+Home-page: https://github.com/shahriyardx/easy-pil
+Author: Md Shahriyar Alam
+Author-email: contact@shahriyar.dev
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/shahriyardx/easy-pil/issues
+Project-URL: Source, https://github.com/shahriyardx/easy-pil/
+Keywords: Pillow,PIL,Pillow wrapper,PIL wrapper,Easy Pillow,Easy PIL,discord rank card,discord card
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (<=8.4.1,>=8.3.1)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: aiohttp (<3.8.0,>=3.6.0)
+
+# Easy PIL
+A library to make common tasks of Pillow easy.
+
+# Usage
+[Examples](https://github.com/shahriyardx/easy-pil/tree/master/examples)
+
+[Tutorials](https://youtube.com/playlist?list=PLb_oBhGqAlbT4yVqV0TSXggA8b0lZhGhn)
+
+# Changelog
+
+## 0.0.1
+- First working release
+
+## 0.0.2
+- Fix some bugs
+
+## 0.0.3
+- Added `multicolor_text` method
+
+## 0.0.4
+- Fix README
+
+## 0.0.5
+- Added `polygon` method
+
+## 0.0.6
+- Added `arc` and `rounded_bar` methods
+
+## 0.0.7
+- Added `blend` method
+- Added `blur` method
+
+## 0.0.8
+- Rounded corners fix
+
+

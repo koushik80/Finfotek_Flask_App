@@ -1,0 +1,450 @@
+{% extends "layouts.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ƑINƑO†EK | Services </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Responsive, Flat, Android Compatible,
+                Smartphone Compatible" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{url_for('static', filename='css/style.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{url_for('static', filename='css/fontawesome-all.css')}}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+    <!-- mian-content -->
+    {%block content%}
+    <section class="mian-content">
+        <!-- /header-top-->
+        <div class="bs-slider-overlay">
+
+            <div class="header-top">
+                <header class="mainheader">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light RWDpagescrollfix">
+                        <h1><a class="navbar-brand" href="{{url_for('index')}}"><i class="fas fa-server"></i> ƑINƑO†EK</a></h1>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse navbar-toggle " id="navbarNavAltMarkup">
+                            <ul class="navbar-nav mx-auto">
+                                <li><a class="nav-link text-uppercase" href="{{url_for('index')}}">Home</a></li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Here We
+                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{url_for('services')}}">Services</a>
+                                        <a class="dropdown-item" href="{{url_for('blog')}}" title="">Blog</a>
+                                        <a class="dropdown-item" href="{{url_for('single')}}" title="">Featured Article</a>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="{{url_for('about')}}">About us</a></li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="{{url_for('price')}}">Pricing Plans</a></li>
+                                <li class="nav-item"><a class="nav-link text-uppercase" href="{{url_for('contact')}}">Contact us</a></li>
+                                <li class="nav-item active"><a class="nav-link text-uppercase" href="{{url_for('account')}}">Account</a></li>
+
+                            </ul>
+                            <div class="top-info text-left">
+
+
+                                <ul>
+                                    <li><i class="fas fa-phone-volume" style="color:red"></i> +358 00 888 000</li>
+                                    <li class="number-phone"><a class="nav-link active request text-uppercase font-weight-bold" style="color:red" href="{{url_for('register')}}">Signup</a></li>
+                                    <li class="number-phone"><a class="nav-link request text-uppercase font-weight-bold" style="color:red" href="{{url_for('login')}}">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <!-- /header-top-->
+                <!-- /banner-info-->
+                <div class="banner-content text-center text-white">
+                </div>
+                <!-- //banner-info-->
+            </div>
+        </div>
+        <!-- //header-top-->
+    </section>
+    <!-- //mian-content-->
+    <!-- /breadcrumb -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{{url_for('index')}}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Services</li>
+    </ol>
+
+    <!-- //breadcrumb -->
+    <!-- /features -->
+    <section class="banner-bottom py-lg-5 py-md-5 py-3" id="feature">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Features</h4>
+                <h3 class="tittle text-center"> Our Great Features</h3>
+                <div class="row mt-lg-5 mt-md-4 mt-4">
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-sort-alpha-up mb-4"></i>
+                                <h5 class="card-title">Integrity</h5>
+                                <p class="card-text">We make mistakes just like everyone else. We differ by our quality of being honest and having strong moral principles, so we act according to our values.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-user mb-4" aria-hidden="true"></i>
+                                <h5 class="card-title">Fiscal responsibility</h5>
+                                <p class="card-text">Decisions must be made beyond the needs of the present so that we can face the challenges of tomorrow, with the responsibility to our employees, clients, and partners.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 about-in text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-cloud mb-4" aria-hidden="true"></i>
+                                <h5 class="card-title">SAGE 100 CLOUD</h5>
+                                <p class="card-text">Sage 100 Cloud accounting software is an industry-leading accounting and business management solution for small to medium-sized companies with 10 – 200 employees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="far fa-heart mb-4"></i>
+                                <h5 class="card-title">User Friendly</h5>
+                                <p class="card-text">With a modern and elegant technical design, ƑINƑO†EK's framework is unique. It allows us and our community developers to provide top-notch usability that scales across all applications.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-magic mb-4"></i>
+                                <h5 class="card-title">Modern Design</h5>
+                                <p class="card-text">ƑINƑO†EK designs marketing strategies that deliver business impact through an approach positioned at the intersection of data, creative design and contemporary culture.We build digital solutions and design marketing campaigns
+                                    based on data and analysis, aimed at achieving full impact for the clients.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 about-in mt-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-sliders-h mb-4"></i>
+                                <h5 class="card-title">Independence</h5>
+                                <p class="card-text">A general rule to avoid partnerships, contracts or other involvements that may compromise our values, service or prevent us from acting according to the best business practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //features -->
+    <!-- /services -->
+    <section class="banner-bottom bg-light py-lg-5 py-md-5 py-3" id="services">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">What we do</h4>
+                <h3 class="tittle text-center mb-md-5 mb-4">Our Offered Services</h3>
+                <div class="row middle-grids">
+                    <div class="col-lg-4 about-in middle-grid-info text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fab fa-accusoft mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">
+                                    Best IT solutions & Financial Planning</h5>
+                                <p class="card-text">We break down different aspects of a client's financial life including assets, expenses and income and help to create a financial plan to reach different goals.
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in middle-grid-info active text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-compress mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">Best Business Solution</h5>
+                                <p class="card-text">We help businesses improve their performance and implement changes that optimize process in order to achieve success. And we are happy to...More texts will be added soon...More texts will be added soon
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-in middle-grid-info text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-chart-pie mb-2"></i>
+                                <h5 class="card-title text-uppercase my-3">Best Expert Consultancy</h5>
+                                <p class="card-text">We create custom solutions in accordance with the company’s business size, organization and objectives. We are proud to offer our...More texts will be added soon...More texts will be added soon
+                                </p>
+                            </div>
+                            <div class="log-in mt-md-3 mt-2">
+                                <a class="hover-2 btn text-uppercase" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //services -->
+    <!-- /accordition -->
+    <section class="banner-bottom py-lg-5 py-md-5 py-3" id="feature">
+        <div class="container">
+            <div class="inner-sec py-lg-5 py-3">
+                <h4 class="sub-tittle text-uppercase text-center">Ask Anything</h4>
+                <h3 class="tittle text-center"> Frequently Asked Questions</h3>
+                <div class="row mt-lg-5 mt-md-4 mt-4">
+                    <div class="col-lg-6 accrodition-info">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          What does a typical plan cost?
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Because we customize each plan to our client's unique needs, there is no one-size-fits-all offering. We'll work with you to put together a plan based on factors such as the size of your organization and your business
+                                            environment. It also depends on the level of involvement you want from our team. ƑINƑO†EK offers various solutions and services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          We are not ready for cloud computing. Are you going to push us?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Absolutely not. Although the cloud can offer advantages in many cases, recommending it requires a deep understanding of your organization's needs, as well as the current and future state of your network. First,
+                                            we'll analyze your environment and take inventory of your assets and day-to-day activities before advising you on solutions that might benefit your company. After we successfully on-board, strategic business
+                                            reviews with our consultants and your technical account leads will give us the opportunity to determine whether or not the cloud computing discussion is appropriate or not. Once we have a thorough understanding
+                                            of your business needs, we can help determine the correct solution for you. If we don't feel migrating to the cloud is the best direction for your organization, we will not lead you down that path.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          What if we already have an internal technical support staff?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>We actually have plans and packages designed specifically for organizations that already have on-site IT staff. In fact, many of our clients already have in-house IT teams. Whether your IT staff prefers to handle
+                                            higher level support (e.g. servers, routers, firewalls, and so on) or lower level help desk tasks, we're flexible enough to adapt to your environment where you need us. We can provide overlay and ancillary support,
+                                            and it's common for our clients to leverage our team for CIO services, help desk tasks, and other things their IT staff members either don't want to focus on or don't have the resources to tackle. Overall, our
+                                            aim is to support your organization where we're needed and work with your IT team to add value as an exceptional technology partner for your company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                          What should we consider when choosing an IT service provider?
+                                       </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>It’s a partnership. IT impacts all areas of your business from operations to employee productivity to the client experience. IT is a continuous improvement process. Technology changes exponentially and companies
+                                            must adapt accordingly. Working with the appropriate partner means that you trust their direction and the ability to implement the plan effectively in your organization. It is essential to ensure that the organization
+                                            you’re choosing as an IT service provider has your best interests in mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 accrodition-info-img">
+                        <img src="../static/images/ab1.jpg" class="img-fluid" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //accordition -->
+    <!--/newsletter-->
+    <footer class="newsletter_right bg-dark pymd-5 py-4">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <div class="row mb-md-4 mb-3">
+
+                    <div class="col-md-6 n-right tex-left">
+                        <h3 class="tittle foot mb-md-5 mb-4 text-white">Subscribe our Newsletter</h3>
+                        <form action="#" method="post">
+                            <div class="form-group d-flex">
+                                <input class="form-control" type="email" name="Email" placeholder=" Email Address" required="">
+                                <input class="form-control submit text-uppercase" type="submit" value="Subscribe">
+                            </div>
+
+                        </form>
+                        <div class="copyright mt-md-5 mt-3">
+                            <h2><a class="navbar-brand" href="{{url_for('index')}}">
+                                        ƑINƑO†EK</a></h2>
+                            <p class="copy-right mt-3">© 2021 ƑINƑO†EK. All Rights Reserved</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 social-info text-right">
+                        <h3 class="tittle foot mb-md-3 mb-4 text-white">Join us in the following social networks</h3>
+                        <p>Stay informed with the latest tech trends, useful services, and updates</p>
+                        <div class="social-icon footer mt-3">
+                            <ul class="links-nav d-flex justify-content-end">
+                                <li>
+                                    <a class="active" href="{{url_for('index')}}" style="color:red;">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('about')}}">About us</a>
+                                </li>
+
+                                <li>
+                                    <a href="{{url_for('price')}}">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('blog')}}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{{url_for('contact')}}">Contact us</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icons justify-content-end mt-md-5 mt-3">
+                                <li class="mr-1"><a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+                                <li class="mx-1"><a href="https://twitter.com/"><span class="fab fa-twitter"></span></a></li>
+                                <li class="mx-1"><a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a></li>
+                                <li class="mx-1"><a href="https://www.linkedin.com/"><span class="fab fa-linkedin-in"></span></a></li>
+                                <li class="mr-1"><a href="https://www.thesoftwarereport.com/category/latest-news/" target="_blank"><span class="fa fa-rss" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//newsletter-->
+
+
+
+    <!-- js -->
+    <script src="../static/js/jquery-2.2.3.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 150) {
+                $('nav.pagescrollfix,nav.RWDpagescrollfix').addClass('shrink');
+            } else {
+                $('nav.pagescrollfix,nav.RWDpagescrollfix').removeClass('shrink');
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+
+    <!-- password-script -->
+    <script>
+        window.onload = function() {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- //password-script -->
+
+    <!--/ start-smoth-scrolling -->
+    <script src="../static/js/move-top.js"></script>
+    <script src="../static/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear'
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+    <!-- /js -->
+    <script src="../static/js/bootstrap.js"></script>
+    <!-- //js -->
+    {%endblock content%}
+</body>
+
+</html>
