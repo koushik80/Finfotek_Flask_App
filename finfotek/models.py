@@ -8,6 +8,7 @@ from datetime import datetime
 from flask_login import UserMixin
 
 
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
@@ -28,7 +29,7 @@ class User(db.Model,UserMixin):
     
     def get_token(self,expires_sec=300):
         serial=Serializer(app.config['SECRET_KEY'], expires_in=expires_sec)
-        return serial.dumps({'user_id:user.id'}).decode('utf-8')
+        return serial.dumps({'user_id':self.id}).decode('utf-8')
     
     @staticmethod
     def verify_token(token):
@@ -55,4 +56,20 @@ class UserDetails(db.Model):
     
     def __repr__(self):
         return f'{self.firstname} {self.lastname}'
+    
+    
+    
+    
+class ContactForm(db.Model):
+    
+
+    id=db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(20),unique=True,nullable=False)
+    email= db.Column(db.String(120),unique=True,nullable=False)
+    subject = db.Column(db.String(120),unique=True,nullable=False)
+    message = db.Column(db.String(200),unique=True,nullable=False)
+
+    def __repr__(self):
+        return f'{self.name} {self.email} {self.subject} {self.message}'
+
     

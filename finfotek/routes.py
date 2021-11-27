@@ -30,7 +30,7 @@ def save_image(picture_file):
     picture_path=os.path.join(app.root_path,'static/profile_pics', picture_name)
     picture_file.save(picture_path)
     return picture_name
-    
+
 @app.route('/account',methods=['POST','GET'])
 @login_required
 def account():
@@ -112,14 +112,14 @@ def send_mail(user):
     token=user.get_token()
     msg=Message('Password Reset Request',recipients=[user.email],sender='noreply@finfotek.com')
     msg.body=f''' To reset your password please follow the link below.
-    
+
     {url_for('reset_token',token=token,_external=True)}
-    
+
     If you didn't send a password reset request, please ignore this message.
-    
+
     '''
     mail.send(msg)
-    
+
 @app.route('/reset_password',methods=['GET','POST'])
 def reset_request():
     form=ResetRequestForm()
@@ -137,7 +137,7 @@ def reset_token(token):
     if user is None:
         flash('That is invalid token or expired. Please try again.','warning')
         return redirect(url_for('reset_request'))
-    
+
     form=ResetPasswordForm()
     if form.validate_on_submit():
         hashed_password=bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -159,13 +159,16 @@ def change_password():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
   form = ContactForm()
-  
+
   if request.method == 'POST':
-    if form.validate() == False:
+
+    if form.validate():
+      db.session.commit()  
       flash('All fields are required.')
       return render_template('contact.html', form=form)
+  
     else:
-       msg = Message(form.subject.data, sender='contact@example.com', recipients=['finfotek80@gmail.com'])
+       msg = Message(form.subject.data, sender='finfotek80@gmail.com', recipients=['unsatisfiedsoul@gmail.com'])
        msg.body = """
        From: %s <%s>
       %s
@@ -173,6 +176,6 @@ def contact():
        mail.send(msg)
        
        return render_template('contact.html', success=True)
-    
+
   elif request.method == 'GET':
     return render_template('contact.html', form=form)
