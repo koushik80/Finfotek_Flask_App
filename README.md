@@ -19,7 +19,7 @@
 
 <h3 align="left">Description:</h3>
 
-  <p>The website is made for a company using Flask that  includes blogs and user registration and login system. It was created as the basis for my training project. The implementation strives to be simple. </p>
+  <p>The app is built for a company using Flask that  includes blogs and user registration and login system. It was created as the basis for my training project. The implementation strives to be simple. </p>
     
  <h3 align="left"> Goals:</h3>
  
